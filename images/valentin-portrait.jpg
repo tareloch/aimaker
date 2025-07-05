@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="portraitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa"/>
+      <stop offset="100%" style="stop-color:#e9ecef"/>
+    </linearGradient>
+    <radialGradient id="faceGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#fff"/>
+      <stop offset="100%" style="stop-color:#f1f3f4"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#portraitBg)"/>
+  
+  <!-- Portrait frame -->
+  <rect x="50" y="50" width="300" height="300" rx="20" fill="none" stroke="#2c3e50" stroke-width="8"/>
+  <rect x="60" y="60" width="280" height="280" rx="15" fill="white"/>
+  
+  <!-- Face -->
+  <g transform="translate(200,200)">
+    <!-- Head shape -->
+    <ellipse cx="0" cy="-20" rx="60" ry="80" fill="url(#faceGrad)"/>
+    
+    <!-- Hair -->
+    <path d="M-60,-60 Q-70,-100 -30,-95 Q0,-105 30,-95 Q70,-100 60,-60 Q60,-40 40,-30 L-40,-30 Q-60,-40 -60,-60 Z" 
+          fill="#2c3e50"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="-20" cy="-30" rx="8" ry="6" fill="white"/>
+    <ellipse cx="20" cy="-30" rx="8" ry="6" fill="white"/>
+    <circle cx="-20" cy="-30" r="4" fill="#2c3e50"/>
+    <circle cx="20" cy="-30" r="4" fill="#2c3e50"/>
+    <circle cx="-18" cy="-32" r="1.5" fill="white"/>
+    <circle cx="22" cy="-32" r="1.5" fill="white"/>
+    
+    <!-- Eyebrows -->
+    <path d="M-28,-40 Q-20,-45 -12,-40" stroke="#2c3e50" stroke-width="3" fill="none"/>
+    <path d="M12,-40 Q20,-45 28,-40" stroke="#2c3e50" stroke-width="3" fill="none"/>
+    
+    <!-- Nose -->
+    <path d="M0,-15 L-3,0 L0,5 L3,0 Z" fill="#e9ecef"/>
+    
+    <!-- Mouth -->
+    <path d="M-15,15 Q0,25 15,15" stroke="#e74c3c" stroke-width="3" fill="none"/>
+    
+    <!-- Facial hair/beard -->
+    <path d="M-25,20 Q0,45 25,20 Q30,35 25,50 Q0,60 -25,50 Q-30,35 -25,20 Z" 
+          fill="#2c3e50" opacity="0.7"/>
+  </g>
+  
+  <!-- Suit/clothing -->
+  <g transform="translate(200,320)">
+    <!-- Suit jacket -->
+    <path d="M-80,-50 L-60,-70 L-20,-65 L20,-65 L60,-70 L80,-50 L80,30 L-80,30 Z" 
+          fill="#2c3e50"/>
+    <!-- Shirt -->
+    <path d="M-20,-65 L20,-65 L20,30 L-20,30 Z" fill="white"/>
+    <!-- Tie -->
+    <path d="M-8,-65 L8,-65 L6,-20 L0,-10 L-6,-20 Z" fill="#e74c3c"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <text x="200" y="380" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    Валентин Великий
+  </text>
+</svg>

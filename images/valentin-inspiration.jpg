@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="inspireBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9a9e"/>
+      <stop offset="50%" style="stop-color:#fecfef"/>
+      <stop offset="100%" style="stop-color:#fecfef"/>
+    </linearGradient>
+    <radialGradient id="energyGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0.1"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#inspireBg)"/>
+  <rect width="400" height="300" fill="url(#energyGrad)"/>
+  
+  <!-- Central inspiring figure -->
+  <g transform="translate(200,150)">
+    <!-- Aura/energy field -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#f39c12" stroke-width="2" opacity="0.5"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#e74c3c" stroke-width="2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#f39c12" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Figure -->
+    <circle cx="0" cy="-10" r="20" fill="#f4d1a4"/>
+    <rect x="-12" y="10" width="24" height="40" rx="4" fill="white"/>
+    
+    <!-- Arms spread wide -->
+    <rect x="-35" y="15" width="10" height="25" rx="5" fill="#f4d1a4" transform="rotate(-45)"/>
+    <rect x="25" y="15" width="10" height="25" rx="5" fill="#f4d1a4" transform="rotate(45)"/>
+    
+    <!-- Radiating energy lines -->
+    <g stroke="#f39c12" stroke-width="2" opacity="0.8">
+      <line x1="0" y1="-30" x2="0" y2="-60"/>
+      <line x1="21" y1="-21" x2="42" y2="-42"/>
+      <line x1="30" y1="0" x2="60" y2="0"/>
+      <line x1="21" y1="21" x2="42" y2="42"/>
+      <line x1="0" y1="30" x2="0" y2="60"/>
+      <line x1="-21" y1="21" x2="-42" y2="42"/>
+      <line x1="-30" y1="0" x2="-60" y2="0"/>
+      <line x1="-21" y1="-21" x2="-42" y2="-42"/>
+    </g>
+  </g>
+  
+  <!-- Floating inspiration symbols -->
+  <g fill="#f39c12" opacity="0.9">
+    <!-- Hearts -->
+    <g transform="translate(80,80)">
+      <path d="M0,5 C0,0 -8,-5 -8,0 C-8,-5 -16,0 -16,5 C-16,10 0,20 0,20 C0,20 16,10 16,5 C16,0 8,-5 8,0 C8,-5 0,0 0,5 Z" 
+            transform="scale(0.5)"/>
+    </g>
+    
+    <g transform="translate(320,70)">
+      <path d="M0,5 C0,0 -8,-5 -8,0 C-8,-5 -16,0 -16,5 C-16,10 0,20 0,20 C0,20 16,10 16,5 C16,0 8,-5 8,0 C8,-5 0,0 0,5 Z" 
+            transform="scale(0.6)"/>
+    </g>
+    
+    <!-- Musical notes -->
+    <g transform="translate(120,200)">
+      <circle cx="0" cy="10" r="4"/>
+      <rect x="4" y="-10" width="2" height="20"/>
+      <path d="M6,-10 Q10,-8 10,-4" stroke="currentColor" stroke-width="2" fill="none"/>
+    </g>
+    
+    <g transform="translate(280,220)">
+      <circle cx="0" cy="10" r="4"/>
+      <rect x="4" y="-10" width="2" height="20"/>
+      <path d="M6,-10 Q10,-8 10,-4" stroke="currentColor" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Butterfly -->
+    <g transform="translate(100,50)">
+      <ellipse cx="-3" cy="-2" rx="4" ry="6" fill="currentColor"/>
+      <ellipse cx="3" cy="-2" rx="4" ry="6" fill="currentColor"/>
+      <ellipse cx="-3" cy="2" rx="3" ry="4" fill="currentColor"/>
+      <ellipse cx="3" cy="2" rx="3" ry="4" fill="currentColor"/>
+      <line x1="0" y1="-6" x2="0" y2="6" stroke="currentColor" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Ascending particles -->
+  <g fill="rgba(243,156,18,0.6)">
+    <circle cx="150" cy="250" r="2"/>
+    <circle cx="180" cy="230" r="1.5"/>
+    <circle cx="220" cy="240" r="2"/>
+    <circle cx="250" cy="220" r="1"/>
+    <circle cx="160" cy="200" r="1.5"/>
+    <circle cx="240" cy="200" r="2"/>
+    <circle cx="140" cy="180" r="1"/>
+    <circle cx="260" cy="180" r="1.5"/>
+    <circle cx="170" cy="160" r="1"/>
+    <circle cx="230" cy="160" r="1"/>
+  </g>
+  
+  <!-- Inspirational rays -->
+  <g stroke="#f39c12" stroke-width="1" opacity="0.4">
+    <path d="M50,50 Q200,100 350,50"/>
+    <path d="M60,250 Q200,200 340,250"/>
+    <path d="M30,150 Q100,120 170,150"/>
+    <path d="M230,150 Q300,120 370,150"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="290" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    Источник вдохновения
+  </text>
+</svg>

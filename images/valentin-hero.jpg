@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="50%" style="stop-color:#764ba2"/>
+      <stop offset="100%" style="stop-color:#e74c3c"/>
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#f39c12;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#heroGradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="80" r="2" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="520" cy="120" r="1.5" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="450" cy="60" r="1" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="80" cy="300" r="1.5" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="550" cy="320" r="2" fill="rgba(255,255,255,0.4)"/>
+  
+  <!-- Central figure silhouette -->
+  <g transform="translate(300,200)">
+    <!-- Glow effect -->
+    <circle cx="0" cy="0" r="120" fill="url(#glowGradient)" opacity="0.3"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="35" fill="rgba(255,255,255,0.9)"/>
+    
+    <!-- Crown -->
+    <path d="M-25,-55 L-15,-65 L-5,-55 L5,-65 L15,-55 L25,-65 L30,-50 L-30,-50 Z" 
+          fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
+    <circle cx="-15" cy="-60" r="3" fill="#e74c3c"/>
+    <circle cx="0" cy="-70" r="4" fill="#e74c3c"/>
+    <circle cx="15" cy="-60" r="3" fill="#e74c3c"/>
+    
+    <!-- Body -->
+    <rect x="-20" y="5" width="40" height="60" rx="5" fill="rgba(255,255,255,0.8)"/>
+    
+    <!-- Cape -->
+    <path d="M-25,5 Q-50,30 -40,65 L-20,65 L-20,5 Z" fill="#e74c3c" opacity="0.8"/>
+    <path d="M25,5 Q50,30 40,65 L20,65 L20,5 Z" fill="#e74c3c" opacity="0.8"/>
+    
+    <!-- Arms -->
+    <rect x="-35" y="15" width="15" height="35" rx="7" fill="rgba(255,255,255,0.7)"/>
+    <rect x="20" y="15" width="15" height="35" rx="7" fill="rgba(255,255,255,0.7)"/>
+    
+    <!-- Legs -->
+    <rect x="-15" y="65" width="12" height="40" rx="6" fill="rgba(255,255,255,0.7)"/>
+    <rect x="3" y="65" width="12" height="40" rx="6" fill="rgba(255,255,255,0.7)"/>
+  </g>
+  
+  <!-- Decorative text -->
+  <text x="300" y="350" text-anchor="middle" font-family="serif" font-size="24" font-weight="bold" fill="white" opacity="0.9">
+    ВАЛЕНТИН ВЕЛИКИЙ
+  </text>
+  
+  <!-- Star decorations -->
+  <g fill="rgba(255,255,255,0.6)">
+    <path d="M150,100 L152,106 L158,106 L153,110 L155,116 L150,112 L145,116 L147,110 L142,106 L148,106 Z"/>
+    <path d="M480,200 L482,206 L488,206 L483,210 L485,216 L480,212 L475,216 L477,210 L472,206 L478,206 Z"/>
+    <path d="M120,250 L122,256 L128,256 L123,260 L125,266 L120,262 L115,266 L117,260 L112,256 L118,256 Z"/>
+  </g>
+</svg>
