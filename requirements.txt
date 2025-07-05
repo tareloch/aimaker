@@ -1,0 +1,6 @@
+aiohttp==3.9.5
+aiohttp-cors==0.7.0
+asyncio
+pydantic==2.7.4
+python-dotenv==1.0.0
+requests==2.31.0
