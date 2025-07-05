@@ -1,20 +1,25 @@
 """
-Менеджер стратегий заработка
+Менеджер стратегий заработка с использованием Gemini AI
 """
 
 import logging
+import asyncio
+import random
 from typing import List, Dict, Any
 from abc import ABC, abstractmethod
+from datetime import datetime
 
 from agent.core.config import Config
+from agent.core.gemini_manager import GeminiManager
 
 
 class EarningStrategy(ABC):
     """Базовый класс для стратегий заработка"""
     
-    def __init__(self, name: str, config: Config):
+    def __init__(self, name: str, config: Config, gemini_manager: GeminiManager):
         self.name = name
         self.config = config
+        self.gemini = gemini_manager
         self.logger = logging.getLogger(f"strategy.{name}")
         self.is_active = False
         self.daily_earnings = 0.0
