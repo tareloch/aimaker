@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ai-agent
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: PORT
+        value: 8080
+      - key: DAILY_EARNING_GOAL
+        value: 1.0
+      - key: MAX_DAILY_TASKS
+        value: 10
+      - key: RISK_TOLERANCE
+        value: 0.3
+    healthCheckPath: /
+    disk:
+      name: ai-agent-disk
+      mountPath: /app/data
+      sizeGB: 1

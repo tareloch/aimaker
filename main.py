@@ -6,6 +6,7 @@
 
 import asyncio
 import logging
+import os
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -37,7 +38,8 @@ async def main():
         
         # Запуск мониторинга и dashboard
         dashboard = Dashboard(agent)
-        asyncio.create_task(dashboard.start())
+        port = int(os.getenv("PORT", 8080))
+        asyncio.create_task(dashboard.start(port))
         
         logger.info("✅ Агент успешно инициализирован")
         logger.info(f"🎯 Цель: заработать $1 в день")
